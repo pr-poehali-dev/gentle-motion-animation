@@ -61,6 +61,10 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				cosmic: {
+					dark: '#1A1F2C',
+					gray: '#403E43'
 				}
 			},
 			borderRadius: {
@@ -84,11 +88,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float-sway': {
+					'0%, 100%': {
+						transform: 'translate(0, 0) rotate(0deg)'
+					},
+					'25%': {
+						transform: 'translate(8px, -6px) rotate(0.5deg)'
+					},
+					'50%': {
+						transform: 'translate(0, -8px) rotate(0deg)'
+					},
+					'75%': {
+						transform: 'translate(-8px, -6px) rotate(-0.5deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float-sway': 'float-sway 5s ease-in-out infinite'
 			}
 		}
 	},
